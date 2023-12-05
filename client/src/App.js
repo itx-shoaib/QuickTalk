@@ -1,4 +1,7 @@
 import { Typography, AppBar } from '@material-ui/core';
+import VideoPlayer from "./components/VideoPlayer";
+import Options from "./components/Options";
+import Notification from './components/Notification';
 
 function App() {
   return (
@@ -7,8 +10,10 @@ function App() {
         <Typography variant="h2" align="center">QuickTalk</Typography>
       </AppBar>
 
-      {/* Video Player */}
-      {/* Options */}
+      <VideoPlayer />
+      <Options>
+        <Notification />
+      </Options>
     </div>
   );
 }
