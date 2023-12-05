@@ -25,6 +25,11 @@ app.use(cors());
 // Defining the port for the server
 const PORT = process.env.PORT || 5000;
 
+// Making the route to the  server
+app.get("/", (req,res)=>{
+    return res.send(`Server is running`)
+})
+
 // Starting the server and logging the port
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
